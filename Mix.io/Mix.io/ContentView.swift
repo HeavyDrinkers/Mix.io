@@ -10,7 +10,7 @@ import WebKit
 
 struct ContentView: View {
     @State private var showWebView = false
-    private let urlString : String = "https://www.google.com"
+    private let urlString : String = "https://mix-io-web.vercel.app/"
     
     var body: some View {
         GeometryReader { geometry in
