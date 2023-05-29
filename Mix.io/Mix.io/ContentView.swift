@@ -16,9 +16,8 @@ struct ContentView: View {
         GeometryReader { geometry in
                     VStack(spacing: 0) {
                         WebView(url: URL(string: urlString)!)
-                            .frame(height: geometry.size.height)
-                            .cornerRadius(0)
-//                            .shadow(color: .black.opacity(0.3), radius: 20.0, x: 5, y: 5)
+                            .ignoresSafeArea()
+                            .navigationBarHidden(true)
                     }
                 }
     }
